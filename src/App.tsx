@@ -13,21 +13,21 @@ function App() {
     <div>
       <div className="overlay"></div>
       <div className="wrapper">
-          <Router>
-            <header>
-                <a href="#"><img src={logo} width="100" height="auto"  alt="Company Logo" /></a>
-                <nav>
-                    <ul>
-                        <li><Link to="/" className="active">About</Link></li>
-                        <li><Link to="/projects">Projects</Link></li>
-                        <li>
-                          <Link to={{pathname: "https://github.com/blakevd"}} target="_blank">Github</Link>
-                        </li>
-                        <li><Link to="/contact">Contact</Link></li>
-                    </ul>
-                </nav>
-            </header>
-          </Router>
+      <Router>
+          <header>
+              <a href="#"><img src={logo} width="100" height="auto"  alt="Company Logo" /></a>
+              <nav>
+                  <ul>
+                      <li><Link to="/" className="active">About</Link></li>
+                      <li><Link to="/projects">Projects</Link></li>
+                      <li>
+                        <Link to={{pathname: "https://github.com/blakevd"}} target="_blank">Github</Link>
+                      </li>
+                      <li><Link to="/contact">Contact</Link></li>
+                  </ul>
+              </nav>
+          </header>
+
           <main>
               <Routes>
                 <Route path="/" element={<About />} />
@@ -36,6 +36,7 @@ function App() {
                 <Route path="*" element={<NotFound/>} />
               </Routes>
           </main>
+        </Router>
       </div>
     </div> 
   );
