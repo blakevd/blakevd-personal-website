@@ -35,12 +35,11 @@ nav ul li a {
   text-transform: uppercase;
   font-size: 1rem;
   position: relative;
-  transition: transform 0.2s ease-out;
 }
 
 nav ul li a:hover{
-  color: red;
-  transform: translateY(200px);
+  background-color: solid grey;
+  transform: translateY(20px);
 }
 
 nav ul li a.active:before{
@@ -70,6 +69,7 @@ nav ul li a::before {
 nav ul li a:hover::before{
   width: 100%;
   left: 50%;
+  transition: transform ease-out 0.2;
 }
 
 main {
@@ -225,22 +225,22 @@ p.product-price {
 .overlay {
   position: absolute;
   background-color: white;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   animation: reveal 1s ease-in forwards;
   transform-origin: bottom;
 }
 
 @keyframes reveal {
   from {
-      transform: scaleY(1);
+      opacity: 100%;
   }
   to {
-      transform: scaleY(0);
+      opacity: 0%;
   }
 }
 
-main {
+main, div.page-overlay {
   animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   transform: scale(.4);
 }
@@ -250,10 +250,3 @@ main {
       transform: scale(1);
   }
 }
-/*
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-*/

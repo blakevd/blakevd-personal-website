@@ -12,14 +12,14 @@ import About from './pages/About'
 import { useState } from 'react';
 
 function App() {
-  const [currPage, setCurrPage] = useState<string>("");
+  const [currPage, setCurrPage] = useState<string>("About");
   return (
     <div>
       <div className="overlay"></div>
       <div className="wrapper">
       <Router>
           <header>
-              <a href="#"><img src={logo} width="100" height="auto"  alt="Company Logo" /></a>
+              <a><img src={logo} width="100" height="auto"  alt="Company Logo" /></a>
               <nav>
                   <ul>
                       <li>

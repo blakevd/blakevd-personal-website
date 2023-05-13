@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
     return (
-        <div>
+        <div className = "page-overlay">
             <h1>About me loser</h1>
         </div>
     )
