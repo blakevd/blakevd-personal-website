@@ -19,7 +19,7 @@ function App() {
       <div className="wrapper">
       <Router>
           <header>
-              <a><img src={logo} width="100" height="auto"  alt="Company Logo" /></a>
+              <a><img src={logo} width="100" height="auto"  alt="Blake Van Dyken" /></a>
               <nav>
                   <ul>
                       <li>
