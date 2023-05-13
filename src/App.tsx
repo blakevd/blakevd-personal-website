@@ -2,13 +2,17 @@ import React from 'react';
 import logo from './images/blakeyboo.jpg';
 import './App.css';
 // web routing
-import { BrowserRouter as Router, Route, Link, Routes } from'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes, NavLink } from'react-router-dom';
 import NotFound from './pages/NotFound'
 import Contact from './pages/Contact'
 import Projects from './pages/Projects'
 import About from './pages/About'
 
+// state management
+import { useState } from 'react';
+
 function App() {
+  const [currPage, setCurrPage] = useState<string>("");
   return (
     <div>
       <div className="overlay"></div>
@@ -18,12 +22,15 @@ function App() {
               <a href="#"><img src={logo} width="100" height="auto"  alt="Company Logo" /></a>
               <nav>
                   <ul>
-                      <li><Link to="/" className="active">About</Link></li>
-                      <li><Link to="/projects">Projects</Link></li>
                       <li>
-                        <Link to={{pathname: "https://github.com/blakevd"}} target="_blank">Github</Link>
+                        <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>About</NavLink>
                       </li>
-                      <li><Link to="/contact">Contact</Link></li>
+                      <li>
+                        <NavLink to="/projects" className={({ isActive }) => isActive ? "active" : ""}>Projects</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>Contact</NavLink>
+                      </li>
                   </ul>
               </nav>
           </header>
@@ -41,10 +48,5 @@ function App() {
     </div> 
   );
 }
-/*
-<Route path="/" element={<Home />} />
-<Route path="/about" element={<About />} />
-<Route path="/projects" element={<Projects />} />
-<Route path="/contact" element={<Contact />} />
-                */
+
 export default App;
