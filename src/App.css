@@ -10,15 +10,20 @@ body {
 .wrapper {
   margin: 0 0;
   z-index: -1;
+  overflow: hidden;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background: linear-gradient(to right, #66ccff 0%, #ff99ff 100%);
   overflow: hidden;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 header img{
@@ -27,7 +32,7 @@ header img{
 }
 
 nav {
-  margin: 2em;
+  margin: 0;
 }
 
 nav ul {
@@ -82,7 +87,8 @@ nav ul li a:hover::before{
 main {
   display: flex;
   gap: 10rem;
-  margin-top: 4em;
+  margin-top: 6rem;
+  margin-left: 2rem;
 }
 
 .about{
