@@ -4,43 +4,28 @@ const About = () => {
     return (
         <div className = "page-overlay about">
             <div className="left-col">
+                <div className="card card-me">
+                    <div className="card-body">
+                        <h2 className="card-title">About Me</h2>
+                        <p className="card-text">
+                            I am a versitile programmer and a student at the University of Utah
+                            <a href="https://www.linkedin.com/in/joshua-harrison-7a2008100/">
+                                Joshua Harrison
+                            </a>
+                        </p>
+                        <Link to="/contact" className="btn btn-primary">
+                            Contact Me
+                        </Link>
+                    </div>
+                </div>
                 <h1>Educational Background</h1>
-                <p className="edu-subhead">this is a paragraph tag</p> 
                 <div className="edu">
-                    <p className="employees">50K Employees!</p>
+                    <p className="title">50K Employees!</p>
                     <p className="details">here are lots of details <strong>loser</strong></p>
                 </div>
             </div>
             <div className="right-col">
-                <div className="card card1">
-                    <div className="card-details">
-                        <div>
-                            <a href="#" className="product-title">Sports</a>
-                            <p>Running Shoes</p>
-                        </div>
-                        <p className="product-price">$8888</p>
-                    </div>
-                </div>
-
-                <div className="card card2">
-                    <div className="card-details">
-                        <div>
-                            <a href="#" className="product-title">Sports</a>
-                            <p>Running Shoes</p>
-                        </div>
-                        <p className="product-price">$8888</p>
-                    </div>
-                </div>
-
-                <div className="card card3">
-                    <div className="card-details">
-                        <div>
-                            <a href="#" className="product-title">Sports</a>
-                            <p>Running Shoes</p>
-                        </div>
-                        <p className="product-price">$8888</p>
-                    </div>
-                </div>
+                
             </div>
         </div>
     )

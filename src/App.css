@@ -86,7 +86,7 @@ nav ul li a:hover::before{
 main {
   display: flex;
   gap: 10rem;
-  margin-top: 6rem;
+  margin-top: 4.5rem;
   margin-left: 2rem;
   margin-right: 2rem;
   overflow: auto;
@@ -118,6 +118,8 @@ h1 {
   border-radius: 0.2em;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
   text-align: center;
+  color: white;
+  margin-bottom: 1rem;
 }
 
 .edu-subhead {
@@ -126,13 +128,11 @@ h1 {
 }
 
 .edu {
-  display: flex;
   gap: 4em;
-  padding: 2em;
+  padding: .5em;
   border: 1px solid black;
   border-radius: 0.5em;
   position: relative;
-  
 }
 
 .edu::before{
@@ -146,10 +146,10 @@ h1 {
   z-index: 0;
 }
 
-p.employees {
-  font-size: 2rem;
+p.title    {
+  font-size: 1em;
   margin: 0;
-  font-weight: 200;
+  font-weight: bold;
   line-height: 100%;
 }
 
@@ -167,17 +167,25 @@ p.details {
   
 }
 
-.card {
-  border-radius: 1em;
+.card-me {
   padding: 1em;
   display: flex;
-  align-items: end;
   background-size: 150%;
+  background-color: #89d3f9;
+  margin-top: 4rem;
 }
 
-.card1 {
-  grid-area: left;
-  background-image: url('./images/clothing1.jpg');
+.card-me::before {
+  position: absolute;
+  content: "";
+  background: url('./images/blakeyboo.jpg');
+  background-size: 150px;
+  border-radius: 5rem;
+  width: 150px;
+  height: 150px;
+  top: -25px;
+  left: 100px;
+  z-index: 0;
 }
 
 .card2 {
