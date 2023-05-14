@@ -5,9 +5,8 @@ const About = () => {
         <div className = "page-overlay about">
             <div className="left-col">
                 <h1>Educational Background</h1>
-                <p className="subhead">this is a paragraph tag</p>
-                
-                <div className="news">
+                <p className="edu-subhead">this is a paragraph tag</p> 
+                <div className="edu">
                     <p className="employees">50K Employees!</p>
                     <p className="details">here are lots of details <strong>loser</strong></p>
                 </div>

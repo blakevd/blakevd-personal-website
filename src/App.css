@@ -99,7 +99,7 @@ main {
 }
 
 .left-col {
-  width: 45%;
+  width: 40%;
 }
 
 .right-col {
@@ -113,41 +113,19 @@ h1 {
   margin: 0;
 }
 
-.subhead {
+.left-col h1 {
+  background: linear-gradient(to right, #ff99ff 0%, #66ccff 100%); 
+  border-radius: 0.2em;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.edu-subhead {
   font-size: 1rem;
   font-weight: lighter;
 }
 
-.cta-buttons{
-  display: flex;
-  gap: 4em;
-  margin-bottom: 4rem;
-}
-
-.primary-cta {
-  background-color: bisque;
-  font-size: 1rem;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  border-radius: 1em;
-  padding: 1em 1.1em;
-}
-
-.second-cta {
-  font-size: 1rem;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  padding: 1em 1.5em;
-  align-items: center;
-}
-
-.second-cta svg {
-  width: 25px;
-}
-
-.news {
+.edu {
   display: flex;
   gap: 4em;
   padding: 2em;
@@ -157,7 +135,7 @@ h1 {
   
 }
 
-.news::before{
+.edu::before{
   position: absolute;
   content: "";
   background: url('./images/confetti.svg');
