@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './images/blakeyboo.jpg';
+import logo from './images/home-icon.svg';
 import './App.css';
 // web routing
 import { BrowserRouter as Router, Route, Link, Routes, NavLink } from'react-router-dom';
@@ -19,7 +19,7 @@ function App() {
       <div className="wrapper">
       <Router>
           <header>
-              <a><img src={logo} width="100" height="auto"  alt="Blake Van Dyken" /></a>
+              <a href="#"><img src={logo} width="40" height="auto" alt="Blake Van Dyken" /></a>
               <nav>
                   <ul>
                       <li>
