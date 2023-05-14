@@ -194,6 +194,10 @@ p.details {
   position: relative;
 }
 
+.about-links {
+  padding: 1em;
+}
+
 /* right side */
 .right-col {
   flex-grow: 1;
