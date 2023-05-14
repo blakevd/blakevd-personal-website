@@ -9,9 +9,6 @@ const About = () => {
                         <h2 className="card-title">About Me</h2>
                         <p className="card-text">
                             I am a versitile programmer and a student at the University of Utah
-                            <a href="https://www.linkedin.com/in/joshua-harrison-7a2008100/">
-                                Joshua Harrison
-                            </a>
                         </p>
                         <Link to="/contact" className="btn btn-primary">
                             Contact Me
