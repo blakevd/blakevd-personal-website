@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 interface Props {
     repos: any[];
@@ -27,7 +28,11 @@ const Projects = (props: Props) => {
     // return as a list format
     return (
         <div className = "page-overlay projects">
-            <h1>Projects here</h1>
+            <h1>Projects</h1>
+            <motion.div 
+                initial={{ opacity: 0, y: 50 }} 
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}></motion.div>
             <ul>{list}</ul>
         </div>
     )
