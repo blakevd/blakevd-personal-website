@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import linkedin from '../images/linked-in.svg';
 
 const About = () => {
     return (
@@ -10,8 +11,8 @@ const About = () => {
                         <p className="card-text">
                             I am a versitile programmer and a student at the University of Utah
                         </p>
-                        <Link to="/contact" className="btn btn-primary">
-                            Contact Me
+                        <Link to="https://www.linkedin.com/in/blake-van-dyken-610a3b211/" target="_blank" className="btn btn-primary">
+                            <img src={linkedin} alt="LinkedIn" />
                         </Link>
                     </div>
                 </div>

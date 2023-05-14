@@ -138,7 +138,7 @@ h1 {
 .edu::before{
   position: absolute;
   content: "";
-  background: url('./images/confetti.svg');
+  /* background: url()*/
   width: 100px;
   height: 100px;
   top: -20px;
