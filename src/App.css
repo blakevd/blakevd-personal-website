@@ -98,14 +98,6 @@ main {
   margin-top: 0;
 }
 
-.left-col {
-  width: 40%;
-}
-
-.right-col {
-  flex-grow: 1;
-}
-
 h1 {
   font-size: 2rem;
   font-family: "Oswald";
@@ -113,26 +105,10 @@ h1 {
   margin: 0;
 }
 
-.left-col h1 {
-  background: linear-gradient(to right, #ff99ff 0%, #66ccff 100%); 
-  border-radius: 0.2em;
-  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  color: white;
-  margin-bottom: 1rem;
-}
-
-.edu-subhead {
-  font-size: 1rem;
-  font-weight: lighter;
-}
-
-.edu {
-  gap: 4em;
-  padding: .5em;
-  border: 1px solid black;
-  border-radius: 0.5em;
-  position: relative;
+/* left side */
+.left-col {
+  width: 45%;
+  display: flex;
 }
 
 .edu::before{
@@ -146,27 +122,6 @@ h1 {
   z-index: 0;
 }
 
-p.title    {
-  font-size: 1em;
-  margin: 0;
-  font-weight: bold;
-  line-height: 100%;
-}
-
-p.details {
-  font-size: 1rem;
-  margin: 0;
-}
-
-.right-col {
-  display: grid;
-  gap: 2em;
-  grid-template-columns: auto auto;
-  grid-template-areas: "left ."
-                       "left .";
-  
-}
-
 .card-me {
   padding: 1em;
   display: flex;
@@ -176,13 +131,15 @@ p.details {
   border-radius: .2em;
   justify-content: center; /* center horizontally */
   align-items: flex-start; /* align to top */
+  width: 40%;
 }
 
 .card-me::before {
   position: absolute;
   content: "";
-  background: url('./images/blakeyboo.jpg');
-  background-size: 130px;
+  background: url('./images/blake.jpg');
+  background-repeat: no-repeat;
+  background-size: 140px;
   border-radius: 5rem;
   width: 130px;
   height: 130px;
@@ -205,23 +162,50 @@ p.details {
   padding-bottom: 1em;
 }
 
-.card-details a {
-  color: black;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
+.description {
+  margin-top: 6rem;
+  margin-left: 2rem;
+  width: 50%;
 }
 
-.card-details a {
+.left-col h1 {
+  text-align: center;
+  color: black;
+  margin-bottom: 1rem;
+  padding: 0.2em;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  position: relative;
+}
+
+p.title    {
   font-size: 1em;
+  margin: 0;
+  line-height: 100%;
 }
-.card-details p {
+
+p.details {
   font-size: 1rem;
-  font-weight: lighter;
-  margin: 0;;
+  margin: 0;
 }
-p.product-price {
-  font-size: 1rem;
+
+.edu {
+  padding: .2em;
+  position: relative;
+}
+
+/* right side */
+.right-col {
+  flex-grow: 1;
+}
+
+.right-col {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: auto auto;
+  grid-template-areas: "left ."
+                       "left .";
+  
 }
 
 /* Animations */
