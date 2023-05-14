@@ -27,7 +27,6 @@ function App() {
     }
   }
 
-  handleProj() // call once to handle page refresh hack
   return (
     <div>
       <div className="overlay"></div>
@@ -55,7 +54,7 @@ function App() {
           <main>
               <Routes>
                 <Route path="/" element={<About />} />
-                <Route path="/projects" element={<Projects repos={repos.data}/>} />
+                <Route path="/projects" element={<Projects repos={repos.data} index={0}/>} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<NotFound/>} />
               </Routes>

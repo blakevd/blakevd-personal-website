@@ -56,7 +56,7 @@ const About = () => {
                 </div>
             </div>
             <div className="right-col">
-                <h1>Test </h1>
+                
             </div>
         </div>
     )

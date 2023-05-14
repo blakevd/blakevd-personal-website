@@ -223,12 +223,26 @@ p.details {
   padding: 1em;
 }
 
+.projects h1{
+  background: linear-gradient(to right, #66ccff 0%, #b7b6fd 130%);
+  padding: 0.2em;
+  border-radius: 0.1em;
+  color: white;
+  margin: 1em;
+  text-align: center;
+}
+
 .projects ul li {
   padding-bottom: 2em;
+  padding-right: 2em;
+}
+
+.projects ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 .projects ul li h2{
-  text-decoration: none;
   text-transform: capitalize;
   background-color: white;
   border-radius: 0.3em;
@@ -249,6 +263,7 @@ p.details {
   animation: reveal 1s ease-in forwards;
   transform-origin: bottom;
   pointer-events: none;
+  z-index: 99;
 }
 
 @keyframes reveal {
@@ -260,7 +275,7 @@ p.details {
   }
 }
 
-main, div.page-overlay {
+.about{
   animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   transform: scale(.4);
 }
