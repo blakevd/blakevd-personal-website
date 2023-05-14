@@ -18,7 +18,6 @@ header {
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background: linear-gradient(to right, #66ccff 0%, #ff99ff 100%);
-  overflow: hidden;
 
   position: fixed;
   top: 0;
@@ -89,6 +88,8 @@ main {
   gap: 10rem;
   margin-top: 6rem;
   margin-left: 2rem;
+  margin-right: 2rem;
+  overflow: auto;
 }
 
 .about{

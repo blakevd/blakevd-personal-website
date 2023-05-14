@@ -4,15 +4,9 @@ const About = () => {
     return (
         <div className = "page-overlay about">
             <div className="left-col">
-                <h1>Quality Apparel without the price tag</h1>
+                <h1>Educational Background</h1>
                 <p className="subhead">this is a paragraph tag</p>
-                <div className="cta-buttons">
-                    <a href="#" className="primary-cta">Button Text</a>
-                    <a href="#" className="second-cta">
-                        <span>Second Button Text</span>
-                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
-                    </a>
-                </div>
+                
                 <div className="news">
                     <p className="employees">50K Employees!</p>
                     <p className="details">here are lots of details <strong>loser</strong></p>
