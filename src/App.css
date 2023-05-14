@@ -212,6 +212,34 @@ p.details {
   
 }
 
+/* Projects */
+.projects ul {
+  list-style-type: none;
+}
+
+.single-proj {
+  background: linear-gradient(to right, #ff99ff 0%, #66ccff 100%);
+  border-radius: 0.3em;
+  padding: 1em;
+}
+
+.projects ul li {
+  padding-bottom: 2em;
+}
+
+.projects ul li h2{
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: white;
+  border-radius: 0.3em;
+  padding: 0.2em;
+  margin: 0;
+}
+
+.projects ul li p{
+  border-radius: 0.3em;
+}
+
 /* Animations */
 .overlay {
   position: absolute;
