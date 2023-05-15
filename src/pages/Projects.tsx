@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { Link } from "react-router-dom";
+import git from '../images/github-mark.svg';
 import { motion } from 'framer-motion';
 
 interface Props {
@@ -33,7 +34,9 @@ const Projects = (props: Props) => {
     // return as a list format
     return (
         <div className = "page-overlay projects">
-            <h1>Projects</h1>
+            <h1> <Link to="https://github.com/blakevd" target="_blank" className = "about-links">
+                            <img src={git} alt="Github" height="26" width="auto" />
+                        </Link> Projects</h1>
             <motion.ul
                 initial={{ opacity: 0 }} 
                 animate={{ opacity: 1 }}
