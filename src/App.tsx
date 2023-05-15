@@ -10,7 +10,7 @@ import About from './pages/About'
 import axios from 'axios';
 
 // state management
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
   const [repos, getRepos] = useState<any>([]);
@@ -26,6 +26,11 @@ function App() {
       console.log(err);
     }
   }
+
+  // when page refreshes GET projects
+  useEffect(() => {
+    handleProj()
+  })
 
   return (
     <div>
