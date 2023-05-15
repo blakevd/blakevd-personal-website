@@ -254,6 +254,53 @@ p.details {
   border-radius: 0.3em;
 }
 
+/* Contact */
+.contact h1 {
+    background: linear-gradient(to right, #66ccff 0%, #b7b6fd 130%);
+    padding: 0.2em;
+    border-radius: 0.1em;
+    color: white;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.contact-form a {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.contact-form a:hover {
+  background-color: #0062cc;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
 /* Animations */
 .overlay {
   position: absolute;
@@ -275,7 +322,7 @@ p.details {
   }
 }
 
-.about{
+.about, .contact{
   animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   transform: scale(.4);
 }

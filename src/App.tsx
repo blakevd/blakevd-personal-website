@@ -30,7 +30,7 @@ function App() {
   // when page refreshes GET projects
   useEffect(() => {
     handleProj()
-  })
+  }, []) // [] prevents from infinite loadings
 
   return (
     <div>
